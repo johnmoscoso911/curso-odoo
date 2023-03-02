@@ -6,19 +6,20 @@
         <field name="model">imdb.movie</field>
         <field name="arch" type="xml">
             <form string="Movie">
-                <!--                <field name="active" invisible="1"/>-->
+                <field name="active" invisible="1"/>
                 <header/>
                 <sheet>
-                    <!--                    <div class="oe_button_box">-->
-                    <!--                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"-->
-                    <!--                                attrs="{'invisible': [('active', '=', True)]}"/>-->
-                    <!--                    </div>-->
+                    <div class="oe_button_box">
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+                    </div>
                     <div class="oe_title">
                         <label class="oe_edit_only" for="name" string="Name"/>
                         <h1>
                             <field name="name" placeholder="Name"/>
                         </h1>
                         <field name="genre_ids" widget="many2many_tags"/>
+                        <!--options="{'color_field': 'color'}"-->
                     </div>
                     <group>
                         <group>
@@ -58,7 +59,7 @@
                 <field name="year"/>
                 <!-- <filter domain="[('', '=', context_today().strftime('%Y'))]" string="" name="" help=""/> -->
                 <separator/>
-                <!--                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>-->
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
                 <group expand="0" string="Group By">
                     <!--                    <filter name="group_" string="" context="{'group_by': ''}"/>-->
                 </group>

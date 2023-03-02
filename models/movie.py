@@ -24,6 +24,7 @@ class Movie(models.Model):
     duration_display = fields.Char(compute='_compute_duration_display', string='Duration')  # , store=True)
     description = fields.Text()
     genre_ids = fields.Many2many('imdb.genre', 'rel_movie_genre', string='Genres')
+    active = fields.Boolean(default=True)
 
     _sql_constraints = [
         ('check_duration', 'check(duration > 0)', _('Duration must be greater than 0'))
