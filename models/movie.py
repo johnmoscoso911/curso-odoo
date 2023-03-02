@@ -31,4 +31,5 @@ class Movie(models.Model):
     @api.depends('duration')
     def _compute_duration_display(self):
         for movie in self:
-            movie.duration_display = '%dh %dmin' % (3, 1)
+            _ = movie.duration % 60
+            movie.duration_display = '%dh %dmin' % (movie.duration // 60, _)

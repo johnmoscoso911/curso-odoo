@@ -1,16 +1,50 @@
 <?xml version="1.0"?>
 <odoo>
+    <!-- FORM VIEW -->
+    <record id="imdb_movie_form_view" model="ir.ui.view">
+        <field name="name">imdb.movie.form</field>
+        <field name="model">imdb.movie</field>
+        <field name="arch" type="xml">
+            <form string="Movie">
+                <!--                <field name="active" invisible="1"/>-->
+                <header/>
+                <sheet>
+                    <!--                    <div class="oe_button_box">-->
+                    <!--                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"-->
+                    <!--                                attrs="{'invisible': [('active', '=', True)]}"/>-->
+                    <!--                    </div>-->
+                    <div class="oe_title">
+                        <label class="oe_edit_only" for="name" string="Name"/>
+                        <h1>
+                            <field name="name" placeholder="Name"/>
+                        </h1>
+                        <field name="genre_ids" widget="many2many_tags"/>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="year"/>
+                            <field name="duration"/>
+                        </group>
+                        <group/>
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description" widget="html" nolabel="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
     <record id="imdb_movie_tree_view" model="ir.ui.view">
         <field name="name">imdb.movie.tree.view</field>
         <field name="model">imdb.movie</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-                <!--<field name=""/>-->
-                <!--<field name=""/>-->
-                <!--<field name="active" invisible="1"/>-->
-                <!--<field name="_id" invisible="1"/>-->
-                <!--<field name=""/>-->
+                <field name="year"/>
+                <field name="duration_display"/>
+                <field name="genre_ids" invisible="1"/>
             </tree>
         </field>
     </record>
