@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <odoo>
-    <!--              icon=",static/description/icon.png"-->
+    <!--              -->
     <menuitem id="imdb_main_menu"
               name="Movie Database"
               groups="base.group_user"
+              icon="imdb,static/description/icon.png"
               sequence="1">
         <menuitem id="imdb_catalogs_menu"
                   name="Catalogs"

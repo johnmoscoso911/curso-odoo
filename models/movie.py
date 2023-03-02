@@ -5,10 +5,6 @@ from odoo import api, models, fields, _
 _CURRENT_YEAR = fields.Datetime.today().year
 
 
-def _last_10_years():
-    return [(x, x) for x in range(_CURRENT_YEAR + 1, _CURRENT_YEAR - 10, -1)]
-
-
 class Movie(models.Model):
     _name = 'imdb.movie'
     _description = 'Movie'
@@ -17,7 +13,12 @@ class Movie(models.Model):
     def _default_year(self):
         return _CURRENT_YEAR
 
+    @api.model
+    def _last_10_years(self):
+        return [(str(x), str(x)) for x in range(_CURRENT_YEAR + 1, _CURRENT_YEAR - 10, -1)]
+
     name = fields.Char(required=True)
+    # year = fields.Selection(selection=lambda x: _last_10_years, string='Release year', default=_default_year)
     year = fields.Selection(selection='_last_10_years', string='Release year', default=_default_year)
     duration = fields.Integer(string='Duration (min)')
     duration_display = fields.Char(compute='_compute_duration_display', string='Duration')
