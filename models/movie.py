@@ -21,7 +21,7 @@ class Movie(models.Model):
     # year = fields.Selection(selection=lambda x: _last_10_years, string='Release year', default=_default_year)
     year = fields.Selection(selection='_last_10_years', string='Release year', default=_default_year)
     duration = fields.Integer(string='Duration (min)')
-    duration_display = fields.Char(compute='_compute_duration_display', string='Duration')
+    duration_display = fields.Char(compute='_compute_duration_display', string='Duration')  # , store=True)
     description = fields.Text()
     genre_ids = fields.Many2many('imdb.genre', 'rel_movie_genre', string='Genres')
 
