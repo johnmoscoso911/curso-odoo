@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+imdb.access_imdb_genre,access_imdb_genre,imdb.model_imdb_genre,base.group_user,1,1,1,0
+imdb.access_imdb_movie,access_imdb_movie,imdb.model_imdb_movie,base.group_user,1,1,1,0

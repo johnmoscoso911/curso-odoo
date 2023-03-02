@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="imdb_genre_form_view" model="ir.ui.view">
+        <field name="name">imdb.genre.form.view</field>
+        <field name="model">imdb.genre</field>
+        <field name="arch" type="xml">
+            <form>
+                <group col="4" colspan="4">
+                    <field name="name"/>
+                    <div colspan="2">
+                        <span class="text-muted">Hola, esta es una prueba de ocupar 4 espacios en un formulario
+                        </span>
+                    </div>
+                </group>
+                <notebook>
+                    <page string="Description">
+                        <field name="description" widget="html" nolabel="1"/>
+                    </page>
+                </notebook>
+            </form>
+        </field>
+    </record>
+
+    <record id="imdb_genre_tree_view" model="ir.ui.view">
+        <field name="name">imdb.genre.tree.view</field>
+        <field name="model">imdb.genre</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_imdb_genre" model="ir.actions.act_window">
+        <field name="name">Genre</field>
+        <field name="res_model">imdb.genre</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

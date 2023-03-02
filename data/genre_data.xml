@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+        <record id="imdb_genre_a" model="imdb.genre">
+            <field name="name">Acción</field>
+            <field name="description">cuyo argumento implica una interacción moral entre el «bien» y el «mal» llevada a su fin por el ímpetu o la fuerza física.</field>
+        </record>
+        <record id="imdb_genre_b" model="imdb.genre">
+            <field name="name">Ciencia ficción</field>
+            <field name="description">se basa en un futuro cercano o muy lejano, donde se logra ver el avance de la tecnología y como ejecuta este en la historia.</field>
+        </record>
+        <record id="imdb_genre_c" model="imdb.genre">
+            <field name="name">Comedia</field>
+            <field name="description">películas realizadas con la intención de provocar humor, divertimiento, entretenimiento y/o risa en el espectador.</field>
+        </record>
+        <record id="imdb_genre_d" model="imdb.genre">
+            <field name="name">Drama</field>
+            <field name="description">en le cine, películas que se centran principalmente en el desarrollo de una lid entre los protagonistas, o del protagonista con su entorno o consigo mismo.
+            </field>
+        </record>
+        <record id="imdb_genre_e" model="imdb.genre">
+            <field name="name">Fantasía</field>
+            <field name="description">lo contrario a la ciencia ficción. La inexistencia de la tecnología nos da a entender que acaece en un tiempo pasado. La magia, los animales mitológicos o sucesos sin una explicación lógica forman parte de este mundo.</field>
+        </record>
+        <record id="imdb_genre_f" model="imdb.genre">
+            <field name="name">Melodrama</field>
+            <field name="description">tiene una carga emocional o moral muy fuerte o emotiva, atendiendo al gusto de cada persona.</field>
+        </record>
+        <record id="imdb_genre_g" model="imdb.genre">
+            <field name="name">Musical</field>
+            <field name="description">contienen interrupciones en su desarrollo, para dar un breve receso por medio de un fragmento musical cantado o acompañados de una coreografía.</field>
+        </record>
+        <record id="imdb_genre_h" model="imdb.genre">
+            <field name="name">Romance</field>
+            <field name="description">un desenvolvimiento romántico, cariñoso o amoroso entre dos personas.</field>
+        </record>
+        <record id="imdb_genre_i" model="imdb.genre">
+            <field name="name">Suspenso</field>
+            <field name="description">realizadas con la intención de provocar tensión en el espectador. También suele utilizarse la palabra thriller para designar películas de este tipo, aunque hay sutiles diferencias.</field>
+        </record>
+        <record id="imdb_genre_j" model="imdb.genre">
+            <field name="name">Terror 2</field>
+            <field name="description">realizadas con la intención de provocar pavor, tensión, miedo y/o el sobresalto en la audiencia.</field>
+        </record>
+        <record id="imdb_genre_k" model="imdb.genre">
+            <field name="name">Documental</field>
+            <field name="description">Hace referencia a temas de interés científico, social o cultural, entre otros.</field>
+        </record>
+    </data>
+</odoo>
