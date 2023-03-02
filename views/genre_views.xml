@@ -7,7 +7,7 @@
             <form>
                 <group col="4" colspan="4">
                     <field name="name"/>
-                    <field name="color" widget="color"/>
+                    <!--<field name="color" widget="color"/>-->
                     <!--                    <div colspan="2">-->
                     <!--                        <span class="text-muted">Hola, esta es una prueba de ocupar 4 espacios en un formulario-->
                     <!--                        </span>-->
