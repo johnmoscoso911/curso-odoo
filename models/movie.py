@@ -35,3 +35,10 @@ class Movie(models.Model):
         for movie in self:
             _ = movie.duration % 60
             movie.duration_display = '%dh %dmin' % (movie.duration // 60, _)
+
+    def name_get(self):
+        result = []
+        for movie in self:
+            name = '%s (%d)' % (movie.name, movie.year)
+            result.append((movie.id, name))
+        return result
