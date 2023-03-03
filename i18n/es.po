@@ -1,0 +1,210 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* imdb
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-03 16:28+0000\n"
+"PO-Revision-Date: 2023-03-03 16:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_a
+msgid "Acción"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: imdb
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_filter_view
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_form_view
+msgid "Archived"
+msgstr "Eliminado"
+
+#. module: imdb
+#: model:ir.ui.menu,name:imdb.imdb_catalogs_menu
+msgid "Catalogs"
+msgstr "Catalogos"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_b
+msgid "Ciencia ficción"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__color
+msgid "Color"
+msgstr ""
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_c
+msgid "Comedia"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__create_uid
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__create_date
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__description
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__description
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_genre_form_view
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_form_view
+msgid "Description"
+msgstr "Descripcion"
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__display_name
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_k
+msgid "Documental"
+msgstr ""
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_d
+msgid "Drama"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__duration_display
+msgid "Duration"
+msgstr "Duracion"
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__duration
+msgid "Duration (min)"
+msgstr "Duracion (min)"
+
+#. module: imdb
+#: code:addons/imdb/models/movie.py:0
+#: model:ir.model.constraint,message:imdb.constraint_imdb_movie_check_duration
+#, python-format
+msgid "Duration must be greater than 0"
+msgstr "La duracion debe ser mayor a 0"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_e
+msgid "Fantasía"
+msgstr ""
+
+#. module: imdb
+#: model:ir.actions.act_window,name:imdb.action_imdb_genre
+#: model:ir.model,name:imdb.model_imdb_genre
+#: model:ir.ui.menu,name:imdb.imdb_catalogs_genre
+msgid "Genre"
+msgstr "Genero"
+
+#. module: imdb
+#: code:addons/imdb/models/genre.py:0
+#: model:ir.model.constraint,message:imdb.constraint_imdb_genre_unique_name
+#, python-format
+msgid "Genre must be unique"
+msgstr "El genero debe ser unico"
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__genre_ids
+msgid "Genres"
+msgstr "Generos"
+
+#. module: imdb
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_filter_view
+msgid "Group By"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__id
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__id
+msgid "ID"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre____last_update
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__write_uid
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__write_date
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_f
+msgid "Melodrama"
+msgstr ""
+
+#. module: imdb
+#: model:ir.actions.act_window,name:imdb.action_imdb_movie
+#: model:ir.model,name:imdb.model_imdb_movie
+#: model:ir.ui.menu,name:imdb.imdb_catalogs_movie
+#: model:res.groups,name:imdb.imdb_movie_group
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_filter_view
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_form_view
+msgid "Movie"
+msgstr "Pelicula"
+
+#. module: imdb
+#: model:ir.ui.menu,name:imdb.imdb_main_menu
+msgid "Movie Database"
+msgstr "IMDB"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_g
+msgid "Musical"
+msgstr ""
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_genre__name
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__name
+#: model_terms:ir.ui.view,arch_db:imdb.imdb_movie_form_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: imdb
+#: model:ir.model.fields,field_description:imdb.field_imdb_movie__year
+msgid "Release year"
+msgstr "Anio de lanzamiento"
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_h
+msgid "Romance"
+msgstr ""
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_i
+msgid "Suspenso"
+msgstr ""
+
+#. module: imdb
+#: model:imdb.genre,name:imdb.imdb_genre_j
+msgid "Terror 2"
+msgstr ""

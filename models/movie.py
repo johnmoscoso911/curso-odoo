@@ -39,6 +39,6 @@ class Movie(models.Model):
     def name_get(self):
         result = []
         for movie in self:
-            name = '%s (%d)' % (movie.name, movie.year)
+            name = '%s (%s)' % (movie.name, movie.year)
             result.append((movie.id, name))
         return result

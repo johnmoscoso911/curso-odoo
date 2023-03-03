@@ -29,7 +29,7 @@
                         <group/>
                     </group>
                     <notebook>
-                        <page string="Description">
+                        <page string="Description" groups="imdb.imdb_movie_group">
                             <field name="description" widget="html" nolabel="1"/>
                         </page>
                     </notebook>

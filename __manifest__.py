@@ -5,6 +5,7 @@
     'summary': 'Internet Movie Database',
     'depends': ['base'],
     'data': [
+        'security/imdb_security.xml',
         'security/ir.model.access.csv',
         'data/genre_data.xml',
         'views/genre_views.xml',
