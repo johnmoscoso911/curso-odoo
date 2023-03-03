@@ -5,19 +5,18 @@
               name="Movie Database"
               groups="base.group_user,imdb.imdb_movie_group"
               web_icon="imdb,static/description/icon.png"
-              sequence="1">
-        <menuitem id="imdb_catalogs_menu"
-                  name="Catalogs"
-                  groups="base.group_user,imdb.imdb_movie_group">
-            <menuitem id="imdb_catalogs_genre"
-                      name="Genre"
-                      action="action_imdb_genre"
-                      groups="base.group_user"/>
-            <menuitem id="imdb_catalogs_movie"
-                      name="Movie"
-                      action="action_imdb_movie"
-                      groups="base.group_user,imdb.imdb_movie_group"/>
-        </menuitem>
+              sequence="1"/>
+    <menuitem id="imdb_catalogs_menu"
+              name="Catalogs"
+              parent="imdb_main_menu"
+              groups="base.group_user,imdb.imdb_movie_group">
+        <menuitem id="imdb_catalogs_genre"
+                  name="Genre"
+                  action="action_imdb_genre"
+                  groups="base.group_user"/>
+        <menuitem id="imdb_catalogs_movie"
+                  name="Movie"
+                  action="action_imdb_movie"
+                  groups="base.group_user,imdb.imdb_movie_group"/>
     </menuitem>
-
 </odoo>
